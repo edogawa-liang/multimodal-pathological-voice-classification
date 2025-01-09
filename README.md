@@ -14,7 +14,7 @@ This project classifies pathological voice conditions by combining medical histo
 ![image](img/flow.png)
 
 ### Results
-The methods would rank **20th out of 371** on the past competition's public leaderboard. LightGBM achieved the highest accuracy (0.716), while Logistic Regression had the best recall (0.603).
+The methods would rank **20th out of 371** on the past competition's public leaderboard. LightGBM achieved the highest **accuracy (0.716)**, while Logistic Regression had the best **recall (0.603)**.
 
 ### Future Work
 Future work involves designing an end-to-end deep learning model to optimize embeddings directly, incorporating Cross Attention to enhance integration between modalities.
