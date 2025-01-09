@@ -1,10 +1,10 @@
 # Multimodal Pathological Voice Classification
 
 ### Background
-This project aims to classify pathological voice conditions using a multimodal approach, combining medical history data and voice signals. It is based on the **2023 Spring AI Cup competition** and targets five disease categories: Phonotrauma, Incomplete Glottic Closure, Vocal Palsy, Neoplasm, and Normal.
+This project classifies pathological voice conditions by combining medical history data and voice signals. It is based on the **2023 Spring AI Cup competition**, targeting five disease categories: Phonotrauma, Incomplete Glottic Closure, Vocal Palsy, Neoplasm, and Normal.
 
 ### Method
-1. **Medical History Data**: Missing values were handled with median and KNN imputation. Features were processed using One Hot Encoding, MCA, and selected based on feature importance from LightGBM and Logistic Regression.
+1. **Medical History Data**: Missing values were imputed using median and KNN methods. Features were encoded with One Hot Encoding, MCA, and selected using LightGBM and Logistic Regression.
 
 2. **Voice Signals**: Audio signals were standardized to 2-second lengths and processed using a fine-tuned Wav2Vec2 model. Dimensionality reduction was performed using PCA and feature selection, retaining 36 principal components to preserve both global and subtle features.
 
@@ -14,10 +14,10 @@ This project aims to classify pathological voice conditions using a multimodal a
 ![image](img/flow.png)
 
 ### Results
-After applying the above methods, the corresponding results would have achieved a ranking of **20th out of 371** on the public leaderboard, based on the results of the past competition. LightGBM achieved the highest accuracy (0.716), while Logistic Regression demonstrated the best recall (0.603).
+The methods would rank **20th out of 371** on the past competition's public leaderboard. LightGBM achieved the highest accuracy (0.716), while Logistic Regression had the best recall (0.603).
 
 ### Future Work
-Future work includes implementing an end-to-end deep learning framework to directly optimize embeddings for classification tasks. Incorporating Cross Attention mechanisms could enhance the integration of medical history and voice features, improving the model's overall performance.
+Future work involves designing an end-to-end deep learning model to optimize embeddings directly, incorporating Cross Attention to enhance integration between modalities.
 
 ---
 
